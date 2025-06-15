@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Happy Birthday Diyaa 🎉</title>
+  <style>
+    body {
+      margin: 0;
+      background: linear-gradient(to bottom right, #ffe0ec, #c2e9fb);
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+
+    .envelope-wrapper {
+      position: relative;
+      width: 300px;
+      height: 200px;
+      perspective: 1000px;
+    }
+
+    .envelope {
+      width: 100%;
+      height: 100%;
+      position: relative;
+      background: #fff;
+      box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+      border-radius: 8px;
+      overflow: hidden;
+    }
+
+    .flap, .left-fold, .right-fold, .bottom-triangle {
+      position: absolute;
+      background: #ffb6c1;
+    }
+
+    .flap {
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 50%;
+      clip-path: polygon(0 0, 100% 0, 50% 100%);
+      background: #f06292;
+    }
+
+    .left-fold {
+      left: 0;
+      top: 0;
+      width: 50%;
+      height: 100%;
+      clip-path: polygon(0 0, 100% 50%, 0 100%);
+      background: #f48fb1;
+    }
+
+    .right-fold {
+      right: 0;
+      top: 0;
+      width: 50%;
+      height: 100%;
+      clip-path: polygon(100% 0, 0 50%, 100% 100%);
+      background: #f48fb1;
+    }
+
+    .bottom-triangle {
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 50%;
+      clip-path: polygon(50% 0, 0 100%, 100% 100%);
+      background: #ec407a;
+    }
+
+    .heart {
+      position: absolute;
+      top: 45%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 24px;
+      animation: pulse 1s infinite;
+    }
+
+    @keyframes pulse {
+      0% { transform: translate(-50%, -50%) scale(1); }
+      50% { transform: translate(-50%, -50%) scale(1.2); }
+      100% { transform: translate(-50%, -50%) scale(1); }
+    }
+
+    .letter {
+      position: absolute;
+      top: 20%;
+      left: 5%;
+      right: 5%;
+      background: #fff;
+      border-radius: 8px;
+      padding: 16px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      z-index: 10;
+    }
+
+    .letter h3 {
+      margin: 0 0 10px 0;
+      font-size: 16px;
+      color: #333;
+    }
+
+    .letter p {
+      font-size: 14px;
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+  <div class="envelope-wrapper">
+    <div class="envelope">
+      <div class="flap"></div>
+      <div class="heart">❤️</div>
+      <div class="left-fold"></div>
+      <div class="right-fold"></div>
+      <div class="bottom-triangle"></div>
+      <div class="letter">
+        <h3>
+          Happy birthday Diyaa.❤️‍🩹 My one and only sister, you mean a lot to me 🫶.<br>
+          Wishing you a prosperous life ahead 🩵<br>
+          Lot's of love from your brother 🫶.<br>
+          Timro dai la timi lai kaila birsana xaina 😭
+        </h3>
+        <p>
+          Sadhai khusi rahanu 🫠. Yesarai nai fool jasari sadhai foolli rahanu 🥀.<br>
+          Lots of love from dai 😻
+        </p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
